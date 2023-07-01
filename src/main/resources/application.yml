@@ -1,0 +1,10 @@
+# graphql Configuration
+graphql:
+  graphiql:
+    enabled: true
+
+# mongodb Configuration
+spring:
+  data:
+    mongodb:
+      uri: mongodb://test:test@localhost:27017/tech_notes?authSource=admin

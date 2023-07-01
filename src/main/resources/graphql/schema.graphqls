@@ -1,0 +1,23 @@
+type Query {
+    getAllCategories: [Category]
+    getCategoryById(id: ID): Category
+}
+
+type Mutation {
+    createCategory(input: CategoryInput): Category
+    updateCategory(id: ID, input: CategoryInput): Category
+    deleteCategory(id: ID): Boolean
+    deleteAllCategories: Boolean
+}
+
+type Category {
+    id: ID
+    title: String
+    posts: [String]
+}
+
+input CategoryInput {
+  id: Int
+  title: String
+  posts: [String]
+}
